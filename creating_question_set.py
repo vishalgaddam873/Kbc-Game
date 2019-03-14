@@ -16,7 +16,7 @@ questions['data'].append({
 'answer':'''A) Humayun
 B) Akbar
 C) Jahangir
-D) Shahjahan'''  
+D) Shahjahan'''
 })
 
 questions['data'].append({
@@ -32,7 +32,7 @@ questions['data'].append({
 'answer':'''A) Labrador Sea‎
 B) James Bay‎
 C) The English Channel
-D) Greenland Sea'''  
+D) Greenland Sea'''
 })
 
 questions['data'].append({
@@ -48,7 +48,7 @@ questions['data'].append({
 'answer':'''A) 1992
 B) 1995
 C) 1996
-D) 1994'''        
+D) 1994'''
 })
 
 questions['data'].append({
@@ -72,7 +72,7 @@ questions['data'].append({
 'answer':'''A) Allaudin Khilji
 B) Babur
 C) Ibrahim Lodi
-D) Shahjahan'''  
+D) Shahjahan'''
 })
 
 questions['data'].append({
@@ -84,5 +84,7 @@ D) Road tax'''
 })
 
 
-with open('questions.json', 'w') as outfile:  
-    json.dump(questions, outfile)
+with open('questions.json', 'w') as outfile:
+    raw = json.dumps(questions,indent=4,sort_keys=True)
+    outfile.write(raw)
+    outfile.close()
